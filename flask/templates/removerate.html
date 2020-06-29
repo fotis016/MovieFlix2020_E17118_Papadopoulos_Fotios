@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %} 
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form method=POST action="http://127.0.0.1:5000/removerate">
+                <div class="form-group">
+                    <label for="exampleInputMovie">Enter movie title</label>
+                    <input type="text" class="form-control" name="title" placeholder="Title">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %} 
+<div>
+  <h1>Choose one of the options below:</h1>
+   <label for="options">Select one:</label>
+   <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <option value="http://127.0.0.1:5000/searchmv">Search movie</option>
+    <option value="http://127.0.0.1:5000/displmv">Display movie info</option>
+    <option value="http://127.0.0.1:5000/showcomms">Show comments about a movie</option>
+    <option value="http://127.0.0.1:5000/rate">Rate a movie</option>
+    <option value="http://127.0.0.1:5000/removerate">Remove rate from a movie</option>
+    <option value="http://127.0.0.1:5000/inscomm">Insert comment for a movie</option>
+    <option value="http://127.0.0.1:5000/showallcomms">Show all comments for a movie</option>
+    <option value="http://127.0.0.1:5000/showallrate">Show all rates for a movie</option>
+    <option value="http://127.0.0.1:5000/delcomm">Delete a comment</option>
+    <option value="http://127.0.0.1:5000/delacc">Delete your account</option>
+    <option value="http://127.0.0.1:5000/insmov">Insert new movie</option>
+    <option value="http://127.0.0.1:5000/delmov">Delete a movie</option>
+    <option value="http://127.0.0.1:5000/updmov">Update a movie</option>
+    <option value="http://127.0.0.1:5000/delothcomm">Delete comments of users</option>
+    <option value="http://127.0.0.1:5000/upgusr">Upgrade a user</option>
+    <option value="http://127.0.0.1:5000/delothacc">Delete a user's account</option>
+   </select>
+  <br><br>
+  
+{% endblock %}
