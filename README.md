@@ -35,5 +35,8 @@ HOW TO LAUNCH THE SERVICE - INSTRUCTIONS:
 Navigate to the folder contents, then access the flask folder. You can then run the service by executing this command: "sudo docker-compose up --build"
 which essentially launches both the web service and the mongodb through the "docker-compose.yml" file. In order to login and manage the web service, open up the browser and
 type in the url tab: localhost:27017
+
 You'll be prompted to either login or register your account. In case you are running the service for the very first time, a default admin account will be created with the specific
-credentials: email: admin@mail.com, password: 1111
+credentials:
+
+email: admin@mail.com, password: 1111
