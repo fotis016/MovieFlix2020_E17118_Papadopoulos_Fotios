@@ -13,6 +13,11 @@ movies = db['movies']
 
 @app.route('/')
 def index():
+	admin_exists = users.find_one({'category':'1'})
+	if admin_exists == None:
+		password = bcrypt.hashpw('1111'.encode('utf-8'), bcrypt.gensalt())
+		users.insert_one({'name' : 'Admin', 'email' : 'admin@mail.com', 'password' : password, 'category' : '1', 'comments' : [], 'rating' :[]} )
+		
 	if 'email' in session:
 		if session.get('category') == '1':
 			return render_template('mainAdmin.html')
