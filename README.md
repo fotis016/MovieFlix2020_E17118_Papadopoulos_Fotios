@@ -9,6 +9,7 @@
 
 This service has been developed in order to set up and maintain a movie database, accessible through web. Users are split into 2 groups, standard users and admin users.
 Standard and admin users have access to these options: 
+
 1. Search for a movie stored in database
 2. Print all info for all movies stored in database
 3. Print all comments from all users for a specific movie
@@ -21,6 +22,7 @@ Standard and admin users have access to these options:
 10. Terminate account
 
 Only admin users have access to these options:
+
 11. Insert new movie in database
 12. Delete a movie from database
 13. Update information of a specific movie
