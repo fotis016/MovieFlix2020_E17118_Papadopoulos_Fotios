@@ -21,12 +21,12 @@ Standard and admin users have access to these options:
 10. Terminate account
 
 Only admin users have access to these options:
-1. Insert new movie in database
-2. Delete a movie from database
-3. Update information of a specific movie
-4. Delete a specific comment a different user has left for a movie
-5. Upgrade a standard user to admin
-6. Terminate a standard user's account
+11. Insert new movie in database
+12. Delete a movie from database
+13. Update information of a specific movie
+14. Delete a specific comment a different user has left for a movie
+15. Upgrade a standard user to admin
+16. Terminate a standard user's account
 
 HOW TO LAUNCH THE SERVICE - INSTRUCTIONS:
 Navigate to the folder contents, then access the flask folder. You can then run the service by executing this command: "sudo docker-compose up --build"
